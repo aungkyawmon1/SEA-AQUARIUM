@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="23094" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23084"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="UpComingCollectionViewCell" customModule="SEA_AQUARIUM" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="263" height="250"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="263" height="250"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="turtle" translatesAutoresizingMaskIntoConstraints="NO" id="dlA-xd-5ts">
+                        <rect key="frame" x="0.0" y="0.0" width="263" height="250"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="10"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </imageView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="42D-Gg-OSt">
+                        <rect key="frame" x="8" y="8" width="90" height="25"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="clock" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="fvX-FE-tGM">
+                                <rect key="frame" x="8" y="5.3333333333333321" width="16" height="14.666666666666668"/>
+                                <color key="tintColor" systemColor="systemGrayColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="16" id="2FB-vu-IaQ"/>
+                                    <constraint firstAttribute="width" constant="16" id="f6Q-gL-4Yt"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2: 30 PM" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vQd-vc-16J">
+                                <rect key="frame" x="32" y="6.6666666666666661" width="50" height="11.999999999999998"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="10"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="fvX-FE-tGM" firstAttribute="centerY" secondItem="42D-Gg-OSt" secondAttribute="centerY" id="GTa-8k-f6r"/>
+                            <constraint firstAttribute="trailing" secondItem="vQd-vc-16J" secondAttribute="trailing" constant="8" id="I74-P9-8wx"/>
+                            <constraint firstItem="vQd-vc-16J" firstAttribute="centerY" secondItem="42D-Gg-OSt" secondAttribute="centerY" id="KSb-VA-0Jg"/>
+                            <constraint firstItem="vQd-vc-16J" firstAttribute="leading" secondItem="fvX-FE-tGM" secondAttribute="trailing" constant="8" id="MlF-oZ-eqC"/>
+                            <constraint firstAttribute="width" constant="90" id="Muw-1Q-9AK"/>
+                            <constraint firstAttribute="height" constant="25" id="SHq-bl-vca"/>
+                            <constraint firstItem="fvX-FE-tGM" firstAttribute="leading" secondItem="42D-Gg-OSt" secondAttribute="leading" constant="8" id="flf-nt-boh"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="8"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="sharkTank sharkTank sharkTank sharkTank sharkTank sharkTank sharkTank" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G8T-V6-4ig">
+                        <rect key="frame" x="8" y="196.33333333333334" width="247" height="45.666666666666657"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="G8T-V6-4ig" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="8" id="0LO-WR-i6F"/>
+                <constraint firstItem="dlA-xd-5ts" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="9SE-dY-9Ai"/>
+                <constraint firstAttribute="trailing" secondItem="G8T-V6-4ig" secondAttribute="trailing" constant="8" id="HXd-jz-pek"/>
+                <constraint firstItem="42D-Gg-OSt" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="8" id="ILt-jp-rWm"/>
+                <constraint firstItem="dlA-xd-5ts" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="IX2-zs-2Jp"/>
+                <constraint firstAttribute="bottom" secondItem="dlA-xd-5ts" secondAttribute="bottom" id="KiT-m3-Ih5"/>
+                <constraint firstItem="42D-Gg-OSt" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="8" id="aOc-sI-iae"/>
+                <constraint firstAttribute="bottom" secondItem="G8T-V6-4ig" secondAttribute="bottom" constant="8" id="adM-Uh-pXZ"/>
+                <constraint firstAttribute="trailing" secondItem="dlA-xd-5ts" secondAttribute="trailing" id="k25-bK-Hby"/>
+            </constraints>
+            <size key="customSize" width="263" height="250"/>
+            <point key="canvasLocation" x="116.79389312977099" y="-10.563380281690142"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="clock" catalog="system" width="128" height="123"/>
+        <image name="turtle" width="2500" height="1875"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGrayColor">
+            <color red="0.5568627451" green="0.5568627451" blue="0.57647058819999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
